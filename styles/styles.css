@@ -5,6 +5,8 @@
     --color-heading: #313638;
     --color-body: #3F403E;
     --color-neutral: #e0dfd5;
+
+    --border-radius: 30px;
 }
 
 /* Typography */
@@ -205,26 +207,27 @@ p {
 }
 
 .btn--accent {
-    background-color: #e0dfd5;
+    background-color: var(--color-accent);
     border: 2px var(--color-accent) solid;
-    color: var(--color-accent);
+    color: var(--color-neutral);
 }
 
 .btn--accent:hover{
-    background-color: var(--color-accent);
+    background-color: #5b691d;
     color: var(--color-neutral);
+    border: #5b691d 2px solid ;
 }
 
 .btn--block{
     display: flex;
-    width: 90%;
+    width: 70%;
     text-align: center;
 }
 
 /** Inputs **/
 .input {
     border: 0;
-    border-radius: 35px;
+    border-radius: var(--border-radius);
     padding: 1.8rem 3.5rem;
     font-weight: 400;
     outline: none;
@@ -237,6 +240,39 @@ p {
 
 ::placeholder {
     color: #aeb0ac;
+}
+
+.input-group {
+border: 1px solid var(--color-border);
+border-radius: var(--border-radius);
+position: relative;
+}
+
+.input-group .input {
+border: 0;
+position: absolute;
+display: inline;
+padding-top: 2.6rem;
+width: 77%;
+margin: 1rem;
+font-size: 1.5rem;
+}
+
+.input-group .btn {
+margin: 4px;
+position: absolute;
+display: inline;
+top: 20px;
+right: 54px;
+border-radius: var(--border-radius);
+padding: 1.5rem 2.5rem;
+}
+
+.input-group .btn .icon {
+    width: 25px;
+    margin: -8px;
+    padding: 0;
+    top: 10.5px;
 }
 
 @media screen and(min-width: 1024px) {
