@@ -10,6 +10,13 @@
 
     --border-radius: 35px;
 }
+
+/* Established top width */
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
 /* Typography */
 html{
     font-size: 62,5%;
@@ -595,3 +602,36 @@ padding: 1.5rem 2.5rem;
     opacity: 1;
   }
   
+
+  /** Blocks **/
+  .block {
+    --padding-vertical: 6rem;
+    padding: var(--padding-vertical) 2rem;
+  }
+
+  .block__header {
+    text-align: center;
+  }
+
+  .block__heading {
+    margin-top: 0;
+  }
+
+  .block--dark {
+    background-color: #151514;
+    color: var(--color-body-lighter);
+  }
+
+  .block--dark .block__heading {
+    color: var(--color-neutral);
+  }
+
+  .block--skewed-right{
+    padding-bottom: calc(var(--padding-vertical) + 4rem);
+    clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0% 80%);
+  }
+
+  .block--skewed-left{
+    padding-bottom: calc(var(--padding-vertical) + 4rem);
+    clip-path: polygon(0% 0%, 100% 0, 100% 80%, 0% 100%);
+  }
