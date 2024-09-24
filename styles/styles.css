@@ -635,3 +635,10 @@ padding: 1.5rem 2.5rem;
     padding-bottom: calc(var(--padding-vertical) + 4rem);
     clip-path: polygon(0% 0%, 100% 0, 100% 80%, 0% 100%);
   }
+
+  /* Navigation bars */
+  .nav {
+    background-color: var(--color-body-darker);
+    display: flex;
+    justify-content: space-between;
+  }
