@@ -22,6 +22,14 @@ html{
     font-size: 62,5%;
 }
 
+h1,
+h2,
+h3 {
+    color: var(--color-headings);
+    margin-bottom: 1rem;
+    line-height: 1.1;
+}
+
 /** Mobile-first approach**/
 body {
     background-color: #e0dfd5;
@@ -696,5 +704,27 @@ padding: 1.5rem 2.5rem;
   
     .nav__item {
       border: 0;
+    }
+  }
+
+  /* Banner */
+  .banner__headline{
+    font-size: 2rem;
+    color: var(--color-neutral);
+    letter-spacing: 1px;
+    margin: 2rem 0 5rem;
+  }
+
+  .banner__image{
+    width: 100%;
+  }
+
+  @media screen and(min-width: 768px){
+    .banner{
+        padding-top: 0;
+    }
+    .banner__content{
+        text-align: left;
+        align-self: center;
     }
   }
