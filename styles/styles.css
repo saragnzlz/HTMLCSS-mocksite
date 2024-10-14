@@ -211,6 +211,7 @@ p {
     font-size: 1.7rem;
     display: inline-flex;
     text-align: center;
+    outline: 0;
 }
 
 .btn-search>p{
@@ -259,64 +260,48 @@ p {
     text-align: center;
 }
 
+.btn .icon {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    vertical-align: middle;
+}
+
 /** Inputs **/
 .input {
-    border: 0;
     border-radius: var(--border-radius);
-    padding: 1.8rem 3.5rem;
-    font-weight: 400;
-    outline: none;
+    border: 1px solid var(--color-border);
+    color: var(--color-headings);
     font-size: 2rem;
-    width: 70%;
-    margin: 2rem;
-    box-shadow: #3F403E;
-    color: var(--color-heading);
-}
-
-::placeholder {
-    color: #aeb0ac;
-}
-
-.input-group {
-border: 1px solid var(--color-border);
-border-radius: var(--border-radius);
-position: relative;
-}
-
-.input-group .input {
-border: 0;
-position: absolute;
-display: inline;
-padding-top: 2.6rem;
-width: 77%;
-margin: 1rem;
-font-size: 1.5rem;
-}
-
-.input-group .btn {
-margin: 4px;
-position: absolute;
-display: inline;
-top: 20px;
-right: 54px;
-border-radius: var(--border-radius);
-padding: 1.5rem 2.5rem;
-}
-
-.input-group .btn .icon {
-    width: 25px;
-    margin: -8px;
-    padding: 0;
-    top: 10.5px;
-}
-
-@media screen and(min-width: 1024px) {
+    outline: 0;
+    padding: 1.5rem 3.5rem;
+  }
+  
+  ::placeholder {
+    color: #cdcbd7;
+  }
+  
+  .input-group {
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    display: flex;
+  }
+  
+  .input-group .input {
+    border: 0;
+    flex-grow: 1;
+    padding: 1.5rem 2rem;
+  }
+  
+  .input-group .btn {
+    margin: 4px;
+  }
+  
+  @media screen and (min-width: 1024px) {
     .input {
-        font-size: 1.3rem;
+      font-size: 1.5rem;
     }
-    
-}
-
+  }
 /** Cards **/
 .card {
     border-radius: 7px;
@@ -728,3 +713,29 @@ padding: 1.5rem 2.5rem;
         align-self: center;
     }
   }
+
+  /** Domain Blocks **/
+  .block-domain .input-group {
+    box-shadow: 0 0 30px 20px #e6ebee;
+    border: 0;
+    margin: 4rem auto;
+    max-width: 670px;
+  }
+  
+  .block-domain__prices {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 6rem);
+    font-size: 2rem;
+    font-weight: 600;
+    justify-items: center;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .block-domain__prices {
+      grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    }
+  }
+  
