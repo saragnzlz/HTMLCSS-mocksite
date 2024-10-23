@@ -374,7 +374,6 @@ p {
 }
 
 .plan .btn {
-    width: 90%;
     text-align: center;
 }
 
@@ -389,6 +388,14 @@ p {
     position: absolute;
     top: -6px;
     right: 5%;
+}
+
+.plan:hover {
+  transform: scale(1.05);
+}
+
+.plan {
+  transition: transform .2s ease-out;
 }
 @media screen and(min-width: 1024px) {
     .plan__name{
@@ -475,21 +482,23 @@ p {
 }
 
 /* Grids */
+
 .grid {
-    display: grid;
+  display: grid;
+}
+
+@media screen and (min-width: 768px) {
+  .grid--1x2 {
+    grid-template-columns: repeat(2, 1fr);
   }
-  
-  @media screen and (min-width: 768px) {
-    .grid--1x2 {
-      grid-template-columns: repeat(2, 1fr);
-    }
+}
+
+@media screen and (min-width: 1024px) {
+  .grid--1x3 {
+    grid-template-columns: repeat(3, 1fr);
   }
-  
-  @media screen and (min-width: 1024px) {
-    .grid--1x3 {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
+}
+
 
 /** Testimonials **/
 
@@ -739,3 +748,8 @@ p {
     }
   }
   
+  /** Plan block **/
+.block-plan {
+  max-width: 500px;
+  margin: 0 auto;
+}
