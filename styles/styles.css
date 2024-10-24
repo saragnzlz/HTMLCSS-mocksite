@@ -753,3 +753,16 @@ p {
   max-width: 500px;
   margin: 0 auto;
 }
+
+/** Features block **/
+.features {
+  gap: 4rem 2rem;
+}
+
+.features__heading {
+  margin: 1rem 0;
+}
+
+.features__image {
+  width: 100%;
+}
