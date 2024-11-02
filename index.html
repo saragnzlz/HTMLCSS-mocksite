@@ -18,6 +18,70 @@
     <title>Document</title>
   </head>
   <body>
+    <header>
+      <nav class="nav collapsible">
+        <a class="nav__brand" href="/"><img src="images/logo.svg" alt="" /></a>
+        <svg class="icon icon--primary nav__toggler">
+          <use xlink:href="images/sprite.svg#menu"></use>
+        </svg>
+        <ul class="list nav__list collapsible__content">
+          <li class="nav__item"><a href="#">Hosting</a></li>
+          <li class="nav__item"><a href="#">VPS</a></li>
+          <li class="nav__item"><a href="#">Domain</a></li>
+          <li class="nav__item"><a href="#">Pricing</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="block block--dark block--skewed-left">
+      <div class="container grid grid--1x2">
+        <div class="banner__content">
+          <h1 class="block--heading">Hosting na Nube</h1>
+          <p class="banner__tagline">A túa web en vivo en 60 segundos</p>
+          <a href="" class="btn btn--accent btn--stretched">Comeza aquí</a>
+        </div>
+        <div>
+          <picture>
+            <source
+              type="image/png"
+              srcset="images/banner.png 1x, images/resized/banner@2x.png 2x" />
+            <img class="banner__image" src="images/banner.png" alt=""
+          /></picture>
+        </div>
+      </div>
+    </section>
+
+    <section class="block container">
+      <header class="block__header">
+        <h3>Dende 9 euros ao mes</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+          magni necessitatibus quia ipsam sequi natus.
+        </p>
+      </header>
+      <div class="input--search__wrapper">
+        <div class="input-group">
+          <input
+            type="text"
+            class="input"
+            placeholder="Nome de dominio aquí..."
+          />
+          <button class="btn btn--accent">
+            <svg class="icon icon--btn">
+              <use xlink:href="../images/sprite.svg#search"></use>
+            </svg>
+            Procura
+          </button>
+        </div>
+      </div>
+      <ul class="list block-domain__prices">
+        <li><span class="badge badge--secondary">.com 10€</span></li>
+        <li><span class="badge badge--primary">.gal 10€</span></li>
+        <li><span class="badge badge--primary">.gz 10€</span></li>
+        <li><span class="badge badge--primary">.es 20€</span></li>
+        <li><span class="badge badge--primary">.ld 5€</span></li>
+        <li><span class="badge badge--primary">.lpk 5€</span></li>
+      </ul>
+    </section>
     <script src="js/main.js"></script>
   </body>
 </html>

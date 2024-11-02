@@ -600,6 +600,10 @@ p {
     opacity: 0;
     transition: all 0.3s;
   }
+
+  .collapsible--expanded .nav__item {
+    margin: 2rem 0rem;
+  }
   
   .collapsible--expanded .collapsible__chevron {
     transform: rotate(0);
@@ -610,6 +614,11 @@ p {
     opacity: 1;
   }
   
+  @media screen and(min-width: 768px) {
+    .collapsible--expanded .nav__item {
+      margin: 0;
+    }
+  }
 
   /** Blocks **/
   .block {
