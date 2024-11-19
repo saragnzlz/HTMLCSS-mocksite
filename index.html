@@ -11,11 +11,12 @@
     />
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script
       src="https://kit.fontawesome.com/c3824dfd5a.js"
       crossorigin="anonymous"
     ></script>
-    <title>Document</title>
+    <title>Hosting na Nube</title>
   </head>
   <body>
     <header>
@@ -239,7 +240,7 @@
         </picture>
       </article>
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="fade-right">
           <span class="icon-container">
             <svg class="icon icon--primary">
               <use xlink:href="images/sprite.svg#clock"></use>
@@ -254,7 +255,7 @@
           </p>
           <a href="#" class="link-arrow">Saber máis</a>
         </div>
-        <picture>
+        <picture data-aos="zoom-in-left">
           <source
             type="image/webp"
             srcset="images/support.webp 1x, images/support@2x.webp 2x"
@@ -463,5 +464,9 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
